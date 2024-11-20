@@ -1,20 +1,25 @@
-name: Deploy test DAS
+name: Deploy to Vercel
+
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
-  Explore-GitHub-Actions:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Bundle
-        run: npm run build
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "7.4"
+
+      - name: Deploy to Vercel
+        run: |
+          curl -fsSL https://vercel.com/download -o vercel
+          chmod +x vercel
+          ./vercel --token ${{ secrets.VERCEL_TOKEN }} --prod
