@@ -1,0 +1,11 @@
+.nav-link.active,
+.nav-link:hover {
+  background-color: #343a40; /* Color de fondo */
+  color: #ffcc00; /* Color del texto */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.nav-link.active .sb-nav-link-icon i,
+.nav-link:hover .sb-nav-link-icon i {
+  color: #ffcc00; /* Color del icono */
+}

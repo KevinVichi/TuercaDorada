@@ -1,0 +1,109 @@
+/* Asegurar que no haya desbordamiento horizontal */
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-color: #4d4d4d;
+}
+
+.sidebar {
+  background-color: #272321;
+  color: #fff;
+  padding: 15px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  overflow-y: auto;
+  top: 53px;
+}
+
+.sidebar-header {
+  margin-bottom: 30px;
+}
+
+h5 {
+  text-align: center;
+}
+
+.sidebar .list-group-item {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.sidebar .list-group-item:hover {
+  background-color: #69574a;
+}
+
+.sidebar .list-group-item.active {
+  background-color: #69574a;
+}
+
+.main-content {
+  margin-left: 300px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  padding-top: 50px;
+}
+
+button.btn.btn-yellow {
+  background-color: #4d4d4d;
+  border-color: #323232;
+  color: #ffff;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+
+  .main-content {
+    margin-left: 0;
+    margin-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

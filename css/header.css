@@ -1,0 +1,16 @@
+.search-bar {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.input-group {
+  display: inline-flex;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+}
+
+.input-group input:focus {
+  border-color: #fff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,25 @@
+/* Aplica un fondo morado a todo el cuerpo */
+body {
+  background-color: #5c6369;
+  color: #ffffff; /* Cambia el color del texto a blanco para mejor legibilidad */
+}
+
+/* Aplica un fondo morado a los elementos principales del contenido */
+.container-fluid {
+  background-color: #6a0dad;
+  padding: 20px;
+  border-radius: 8px; /* Opcional: añade bordes redondeados */
+}
+
+/* Ajusta las cartas para que se vean mejor sobre el fondo morado */
+.card {
+  background-color: #ffffff;
+  color: #6a0dad;
+  border: none; /* Quita los bordes si prefieres */
+}
+
+/* Cambia el color del encabezado de la carta */
+.card-header {
+  background-color: #5e17eb;
+  color: #ffffff;
+}

@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: url("../../Ecommerce/images/fondo.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+}
+
+header {
+  z-index: 1000;
+}
+
+.form-login {
+  width: 420px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 30px;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-login h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-login a {
+  color: #fff;
+}
+
+.form-login a:hover {
+  text-decoration: underline;
+}

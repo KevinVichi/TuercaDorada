@@ -1,0 +1,67 @@
+body {
+  background-color: #5c6369;
+}
+
+main {
+  padding-top: 50px;
+}
+
+h4 {
+  color: #ffff;
+}
+
+.row {
+  color: #ffff;
+}
+
+table {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+table thead {
+  background-color: #5c6369;
+  color: #fff;
+}
+
+.table th {
+  background-color: #343a40;
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #dee2e6; /* Bordes suaves */
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1; /* Efecto hover en filas */
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.btn-danger img {
+  width: 16px;
+  height: 16px;
+}
+
+#total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
