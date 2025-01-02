@@ -48,48 +48,48 @@ if ($id_transaccion == '') {
   <main>
     <div class="container">
       <?php if (strlen($error) > 0) { ?>
-        <div class="row">
-          <div class="col">
-            <h3><?php echo $error; ?></h3>
-          </div>
+      <div class="row">
+        <div class="col">
+          <h3><?php echo $error; ?></h3>
         </div>
+      </div>
       <?php } else { ?>
-        <div class="row">
-          <div class="col">
-            <b>Folio de la compra: </b><?php echo $id_transaccion; ?> <br>
-            <b>Fecha de la compra: </b><?php echo $fecha; ?> <br>
-            <b>Total: </b><?php echo MONEDA . number_format($total, 2, '.', ','); ?> <br>
-          </div>
+      <div class="row">
+        <div class="col">
+          <b>Folio de la compra: </b><?php echo $id_transaccion; ?> <br>
+          <b>Fecha de la compra: </b><?php echo $fecha; ?> <br>
+          <b>Total: </b><?php echo MONEDA . number_format($total, 2, '.', ','); ?> <br>
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Cantidad</th>
-                  <th>Producto</th>
-                  <th>Importe</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php if ($sqlDet) {
+      <div class="row">
+        <div class="col">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Cantidad</th>
+                <th>Producto</th>
+                <th>Importe</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php if ($sqlDet) {
                   while ($row_det = $sqlDet->fetch(PDO::FETCH_ASSOC)) {
                     $importe = $row_det['precio'] * $row_det['cantidad']; ?>
-                    <tr>
-                      <td><?php echo $row_det['cantidad']; ?></td>
-                      <td><?php echo $row_det['nombre']; ?></td>
-                      <td><?php echo MONEDA . number_format($row_det['precio'], 2, '.', ','); ?></td>
-                    </tr>
+              <tr>
+                <td><?php echo $row_det['cantidad']; ?></td>
+                <td><?php echo $row_det['nombre']; ?></td>
+                <td><?php echo MONEDA . number_format($row_det['precio'], 2, '.', ','); ?></td>
+              </tr>
 
-                <?php }
+              <?php }
                 } else {
                   echo '<tr><td colspan="3">Error al obtener los detalles de la compra.</td></tr>';
                 } ?>
-              </tbody>
-            </table>
-          </div>
+            </tbody>
+          </table>
         </div>
+      </div>
 
 
       <?php } ?>
