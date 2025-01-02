@@ -1,6 +1,8 @@
 # Tuerca Dorada
 
-**Tuerca Dorada** es un sistema de ecommerce desarrollado para la compra y venta de artículos de ferretería. Este proyecto está diseñado para mejorar la gestión administrativa y facilitar las compras de productos de manera rápida y segura.
+**Tuerca Dorada** es un sistema de ecommerce desarrollado para la compra y venta de artículos de ferretería. Este proyecto es una **modificación** del proyecto original [Ituti](URL_DEL_REPOSITORIO_DE_ITUTI), adaptado y extendido para cubrir los requisitos de un negocio ferretero.
+
+---
 
 ## 📌 Basado en Ituti
 Este proyecto se basa en el sistema **Ituti**, un proyecto previamente desarrollado como punto de partida. Las modificaciones incluyen:
@@ -24,18 +26,44 @@ Puedes encontrar el repositorio original de Ituti aquí: [Ituti en Git](URL_DEL_
 ### Para Clientes
 - **Compra de Productos**: Navegar por el catálogo, agregar productos al carrito y realizar compras.
 - **Historial de Compras**: Consultar compras previas desde su perfil.
-- **Pagos Seguros**: Integración con PayPal para procesar pagos.
+- **Pagos Seguros**: Integración con PayPal y Mercado Pago para procesar pagos.
 - **Notificaciones**: Recibir detalles de las compras vía correo electrónico.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
-- **Base de Datos**: MySQL administrado con phpMyAdmin
-- **Diseño**: Bootstrap para una interfaz responsiva y moderna
+
+### Backend
+- **PHP 8.2.12**: Lenguaje principal del backend.
+- **MySQL/MariaDB 10.4.32**: Sistema de base de datos relacional.
+- **PDO**: Para conexiones seguras a la base de datos.
+
+### Frontend
+- **HTML5**
+- **CSS3**
+- **Bootstrap 5.3.3**: Framework CSS para diseño responsive.
+- **JavaScript**: Para interactividad del cliente.
+
+### Procesamiento de Pagos
+- **PayPal API**: Integración para pagos online.
+- **Mercado Pago**: Sistema alternativo de pagos.
+
+### Generación de PDFs
+- **FPDF**: Librería PHP para generar documentos PDF.
+
+### Envío de Emails
+- **PHPMailer**: Para el envío de correos electrónicos.
+
+### Características de Seguridad
+- **Argon2**: Algoritmo de hash para contraseñas.
+- **PDO Prepared Statements**: Para prevenir inyección SQL.
+- **Token CSRF**: Para protección contra ataques CSRF.
 
 ---
 
 ## 📂 Estructura del Proyecto
+- **Frontend**: Carpeta `frontend/` contiene los archivos de diseño e interactividad.
+- **Backend**: Carpeta `backend/` incluye las APIs desarrolladas en PHP.
 - **Base de Datos**: Archivo en `database/` para importar la estructura de la base de datos.
 
 ---
@@ -55,8 +83,16 @@ Puedes encontrar el repositorio original de Ituti aquí: [Ituti en Git](URL_DEL_
 ---
 
 ## 🚀 Cómo Ejecutar el Proyecto
-1. Aseguradte de tener el Apache y Mysql Corriendo
-2. Entra a la siguiente ruta en tu navegador: http://localhost/Ecommerce/
+
+### Backend
+1. Asegurarse de que el servidor Apache y MySQL estén activos en XAMPP.
+2. Colocar los archivos del proyecto en la carpeta `htdocs`.
+3. Acceder a través del navegador en: `http://localhost/TuercaDorada`.
+
+### Frontend
+El frontend se encuentra integrado en el backend y puede ser accesado desde el mismo enlace.
+
+---
 
 ## 📜 Licencia
-Este proyecto está licenciado bajo la MIT License.
+Este proyecto está licenciado bajo la [MIT License](LICENSE).
