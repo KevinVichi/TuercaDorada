@@ -1,6 +1,6 @@
 # Tuerca Dorada
 
-**Tuerca Dorada** es un sistema de ecommerce desarrollado para la compra y venta de artículos de ferretería. Este proyecto es una **modificación** del proyecto original [Ituti](URL_DEL_REPOSITORIO_DE_ITUTI), adaptado y extendido para cubrir los requisitos de un negocio ferretero.
+**Tuerca Dorada** es un sistema de ecommerce desarrollado para la compra y venta de artículos de ferretería. Este proyecto es una **modificación** del proyecto original [Ituti](https://github.com/davidf110102/ITutiShop), adaptado y extendido para cubrir los requisitos de un negocio ferretero.
 
 ---
 
@@ -10,7 +10,7 @@ Este proyecto se basa en el sistema **Ituti**, un proyecto previamente desarroll
 - Añadido de características específicas, como gestión de descuentos y reportes de inventario.
 - Personalización de la base de datos y flujo de compras.
 
-Puedes encontrar el repositorio original de Ituti aquí: [Ituti en Git](URL_DEL_REPOSITORIO_DE_ITUTI).
+Puedes encontrar el repositorio original de Ituti aquí: [Ituti en Git](https://github.com/davidf110102/ITutiShop).
 
 ---
 
