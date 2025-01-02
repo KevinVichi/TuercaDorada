@@ -94,7 +94,7 @@ $categorias = $sqlCategorias->fetchAll(PDO::FETCH_ASSOC);
                   }
                   ?>
                   <a href="details/<?php echo $row['slug']; ?>">
-                    <img src="<?php echo $imagen; ?>" class="d-block w-100">
+                    <img alt="" src="<?php echo $imagen; ?>" class="d-block w-100">
                     <div class="card-body">
                   </a>
                   <h5 class="card-title"><?php echo $row['nombre']; ?></h5>
